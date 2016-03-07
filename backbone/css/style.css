@@ -1,0 +1,183 @@
+body {
+	font-family: 'Lato';
+	color: #5A616D;
+	background-color: #eee;
+}
+
+.logo {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+}
+
+.logo i {
+	position: relative;
+	top: 4px;
+	font-size: 20px !important;
+	color: #ED0505;
+}
+
+.material-icons {
+	font-size: 12px !important;
+}
+
+.text-blue {
+	color: #4a93f3;
+}
+
+.text-violet {
+	color: #AC61D0;
+}
+
+.text-orange {
+	color: #f4a827;
+}
+
+.text-green {
+	color: #46c340;
+}
+
+.text-grey {
+	color: #8796a8;
+}
+
+.topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 3px;
+    width: 100%;
+    min-width: 960px;
+    background-image: -ms-linear-gradient(left, #46C340 0%, #4691F6 100%);
+    background-image: -moz-linear-gradient(left, #46C340 0%, #4691F6 100%);
+    background-image: -o-linear-gradient(left, #46C340 0%, #4691F6 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #46C340), color-stop(1, #4691F6));
+    background-image: -webkit-linear-gradient(left, #46C340 0%, #4691F6 100%);
+    background-image: linear-gradient(to right, #46C340 0%, #4691F6 100%);
+}
+
+.add-new-task {
+	padding: 15px 0px 20px 0px;
+	font-size: 20px !important; 
+	position: relative;
+}
+
+.add-new-task input {
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid #8796a8;
+	font-size: 20px !important; 
+	outline: none;
+	margin-right: 10px;
+	color: #5A616D;
+	padding: 5px 0px;
+}
+
+.add-new-task input:focus {
+	color: #AC61D0;
+	border-bottom: 1px solid #AC61D0;
+}
+
+.add-new-task i {
+	font-size: 20px !important;
+}
+
+.add-new-task i:hover {
+	cursor: pointer;
+	color: #4a93f3;
+}
+
+section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 400px;
+	height: 600px;
+	margin: auto auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #8796a8;
+	-webkit-box-shadow: 2px 2px 0 0px #CFCFCF;
+	box-shadow: 2px 2px 0 0px #CFCFCF;
+}
+
+section h1 {
+	position: relative;
+	color: #fff;
+	text-align: center;
+	padding: 10px 20px;
+	border-bottom: 1px solid #8796a8;
+}
+
+section h1 .todo {
+	font-size: 40px !important;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+section ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+section ul li {
+	position: relative;
+	padding: 10px 10px 10px 30px;
+	border-bottom: 1px dashed #5A616D;
+}
+
+section ul li label {
+	cursor: pointer;
+}
+
+section label i.checkbox {
+	position: absolute;
+	top: 11px;
+	left: 0;
+	font-size: 20px !important;
+}
+
+section input[type="checkbox"] {
+	display: none;
+}
+
+section label i.checked {
+	display: none;
+}
+
+section label i.unchecked{
+	display: inline-block;
+}
+
+section input[type="checkbox"]:checked + label i.checked {
+	display: inline-block;
+}
+
+section input[type="checkbox"]:checked + label i.unchecked{
+	display: none;
+}
+
+.remove {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.remove:hover {
+	color: #f4a827;
+}
+
+#status {
+	text-align: center;
+}
+
+#status span {
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 5px 20px;
+}

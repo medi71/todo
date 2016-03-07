@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple TO DO app based on MVC</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="components/backbone/backbone-min.js"></script>
+	<script type="text/javascript" src="components/backbone.localStorage/backbone.localStorage-min.js"></script>
+
+</head>
+<body>
+	<div class="topbar"></div>
+	<section id="todo-app">
+		<h1 class="text-grey">Simple TO DO app <i class="material-icons todo text-orange">today</i></h1>
+		<div class="add-new-task">
+			<input type="text" name="new-task" value="" placeholder="New task...">
+			<span><i class="material-icons">add_circle_outline</i></span>
+		</div>
+
+		<div id="status">
+			<span class="text-violet" data-status="all">all</span>
+			<span data-status="false">open</span>
+			<span data-status="true">closed</span>
+		</div>
+
+		<script type="text/template" id="list-item">
+			<input type="checkbox" name="" id="ch_<%= id %>">	
+			<label for="ch_<%= id %>">
+				<i class="material-icons checkbox text-green checked">done</i>
+				<i class="material-icons checkbox text-blue unchecked">crop_din</i>
+				<span><%= name %></span>
+			</label>
+			<i class="material-icons remove">cancel</i>
+		</script>
+
+		<ul id="todo-list">
+
+		</ul>
+	</section>
+
+	<footer class="logo">Created with <i class="material-icons">favorite_border</i> by <strong>CustomCode</strong></footer>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
